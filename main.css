@@ -1,0 +1,94 @@
+body{
+    background: linear-gradient(to bottom, #fbff00, #000000);
+    min-height:100%;
+}
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    color: rgb(251, 255, 0);
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    opacity: 0;
+    animation: SlideAndFadeIn 3s  ease-in-out forwards; 
+    font-size: 30px;
+}
+@keyframes SlideAndFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+        color: #ffffff;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        color: rgb(251, 255, 0); 
+    }
+}
+
+.quiz-container{
+    margin: auto;
+    margin-top: 65px;
+    background: rgb(255, 255, 255);
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/*
+ inner spacing - padding
+ 
+*/
+
+.progress-bar-container{
+    height: 10px;
+    background-color: #fbff00;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.progress-bar{
+    height: 100%;
+    background-color: #000000;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.timer{
+    text-align: center;
+    background-color: #fbff00;
+    color: #000000;
+    font-size: 48px;
+    width: 100px;
+    border-radius: 60%;
+    margin:auto ;
+    margin-top: 50px;
+    padding: 50px 30px;
+    font-weight: bold;
+    font-family: 'press start 2P', cursive;
+}
+
+.option-container{
+    margin: 15px;
+    height: fit-content;
+}
+
+.option-btn{
+   display: block;
+   width: 100%;
+   height: 30px;
+   margin-bottom: 5px;
+   background-color: #fbff00;
+   border-radius: 10%;
+   border: 5px solid black;
+   cursor: pointer;
+}
+.option-btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
